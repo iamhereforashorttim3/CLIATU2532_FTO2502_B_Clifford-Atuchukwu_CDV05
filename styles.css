@@ -162,3 +162,24 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+  #about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .photo {
+    margin-top: 1.5rem;
+  }
+
+  .project-1,
+  .project-2 {
+    width: 90%;
+    margin: 0.5rem 0;
+  }
+
+  article {
+    padding: 1rem;
+  }
+}
