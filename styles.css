@@ -1,0 +1,164 @@
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  line-height: 2;
+}
+
+.header {
+  background-color: #000;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+.unorder {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.unorder li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+}
+
+.unorder li a::after {
+  display: block;
+  width: 0%;
+  height: 2px;
+  background: #fff;
+  transition: width 0.3s;
+  margin-top: 4px;
+}
+
+.unorder li a:hover::after {
+  width: 100%;
+}
+
+#about {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem 2rem;
+  background: #000;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.opening-para {
+  background: #111;
+  padding: 1.5rem;
+  border-radius: 12px;
+  max-width: 600px;
+  flex: 1 1 350px;
+  min-width: 280px;
+}
+
+.photo {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+  flex-shrink: 0;
+}
+
+#projects {
+  background-color: #111;
+  padding: 3rem 2rem;
+}
+
+#projects h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+article {
+  background: #222;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 2rem auto;
+  max-width: 900px;
+}
+
+article h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.project-1,
+.project-2 {
+  width: 30%;
+  margin: 0.5rem;
+  border-radius: 10px;
+  object-fit: cover;
+  display: inline-block;
+  vertical-align: top;
+  transition: transform 0.2s;
+}
+
+.project-1:hover,
+.project-2:hover {
+  transform: scale(1.05);
+}
+
+.description {
+  background: #333;
+  padding: 1rem;
+  border-radius: 12px;
+  margin-top: 1rem;
+}
+
+.technology-used {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.technology-used li {
+  background: #444;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+}
+
+footer {
+  background: #000;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+footer h2 {
+  margin-bottom: 1rem;
+}
+
+footer div {
+  background: #111;
+  padding: 1.5rem;
+  border-radius: 12px;
+  display: inline-block;
+  max-width: 600px;
+}
+
+footer a {
+  display: inline-block;
+  margin: 0.5rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
